@@ -61,7 +61,7 @@
 		  returnVal;
 
 		this.each(function(){
-		  var $form       = $(this),
+		  var $target       = $(this),
 			instance    = $form.data('pluginName');
 			if( typeof options === 'string' ){
 				if( instance ){
@@ -78,7 +78,7 @@
 				if( instance ){
 					instance.init(options)
 				}else{
-					$form.data('pluginName', new $.pluginName(this, settings));
+					$target.data('pluginName', new $.pluginName(this, settings));
 				}
 			}
 		});
