@@ -30,7 +30,7 @@
 		/********** 		PUBLIC VARS 	**************/
 		this.publicVar      = _privateVar;
 
-		/********** 	PRIVATE METHODS 	**************/
+		/********** 	PUBLIC METHODS 	**************/
 		this.publicMethod       = function(param1, param2) {
 		  return _getPrivateVar();
 		};
